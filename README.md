@@ -16,3 +16,27 @@ Items vary in size from 1 to 20 volume units. Any Container can hold a combinati
 capacity is the same as its exterior size, so a Box would occupy 5
 volume units in a Bin. The exterior size of a Container is not affected
 by its contents.
+
+## All Containers must have the following methods:
+  - __len__(): Returns the total number of objects within the
+    Container. Objects within Containers inside the Container are not
+    counted; a Bin containing a Box containing a Bag containing an Item
+    will have a length of 1.
+  - count(): Return the total number of objects within the Container,
+    including other Containers and their contents. A Bin containing a
+    Box containing a Bag containing an Item will have a count() of 3.
+  - add(thing): Attempt to put a given object ('thing') in the
+    Container. If there is not enough room, the add fails and the method
+    returns False. If successful, the method returns True.
+  - contains(thing): Check to see if a given 'thing' is within a
+    Container, or within a Container within the Container. Returns
+    True/False.
+  - remove([thing]): This method can do two things. If 'thing' is
+    None or not provided, the last object added to the Container is
+    removed from the Container and returned. If a specific 'thing' is
+    specified, that specific 'thing' is removed. In either case, the
+    method returns either the removed object or `None` (if the
+    Container is empty or does not contain the specified object).
+  - pack(thing): Attempt to put a given object into the Container.
+    Unlike add(), the method will attempt to find room for the object
+    inside any of the Containers within it.
