@@ -1,6 +1,6 @@
 # Warehouse-Management
-<h1> This program implements the basics of a warehouse inventory management system. The warehouse contains Items packed into
-Containers. There are several sizes of container, each with different capacities:
+<h2> This program implements the basics of a warehouse inventory management system. The warehouse contains Items packed into
+Containers. There are several sizes of container, each with different capacities: </h2>
 
 **Container**  **Capacity** (in 'volume units')
 
