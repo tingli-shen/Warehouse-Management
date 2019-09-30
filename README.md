@@ -6,6 +6,7 @@ Containers. There are several sizes of container, each with different capacities
 
 | Warehouse |  Infinite |
 |---|---|
-|   |   |
+| Warehouse |  Infinite |
+|  Shelf  |  100 units |
 |   |   |
 |   |   |
