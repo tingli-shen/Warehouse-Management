@@ -17,7 +17,7 @@ capacity is the same as its exterior size, so a Box would occupy 5
 volume units in a Bin. The exterior size of a Container is not affected
 by its contents.
 
-## All Containers must have the following methods:
+### All Containers must have the following methods:
   - len(): Returns the total number of objects within the
     Container. Objects within Containers inside the Container are not
     counted; a Bin containing a Box containing a Bag containing an Item
