@@ -8,5 +8,6 @@ Containers. There are several sizes of container, each with different capacities
 |---|---|
 | Warehouse |  Infinite |
 |  Shelf  |  100 units |
-|   |   |
-|   |   |
+|   Bin | 10 units  |
+|  Box  |  5 units |
+|   Bag   |  2 units |
