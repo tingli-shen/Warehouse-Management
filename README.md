@@ -4,7 +4,7 @@ Containers. There are several sizes of container, each with different capacities
 
 **Container**  **Capacity** (in 'volume units')
 
-|   |   |
+| Warehouse |  Infinite |
 |---|---|
 |   |   |
 |   |   |
