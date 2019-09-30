@@ -18,7 +18,7 @@ volume units in a Bin. The exterior size of a Container is not affected
 by its contents.
 
 ## All Containers must have the following methods:
-  - __len__(): Returns the total number of objects within the
+  - len(): Returns the total number of objects within the
     Container. Objects within Containers inside the Container are not
     counted; a Bin containing a Box containing a Bag containing an Item
     will have a length of 1.
@@ -27,7 +27,9 @@ by its contents.
     Box containing a Bag containing an Item will have a count() of 3.
   - add(thing): Attempt to put a given object ('thing') in the
     Container. If there is not enough room, the add fails and the method
-    returns False. If successful, the method returns True.
+    returns False. If successful, the method returns True and automatically remove the added
+object from the Container it previously occupied, so it cannot be in two
+places at once.
   - contains(thing): Check to see if a given 'thing' is within a
     Container, or within a Container within the Container. Returns
     True/False.
@@ -39,4 +41,10 @@ by its contents.
     Container is empty or does not contain the specified object).
   - pack(thing): Attempt to put a given object into the Container.
     Unlike add(), the method will attempt to find room for the object
-    inside any of the Containers within it.
+    inside any of the Containers within it and automatically remove the added
+object from the Container it previously occupied, so it cannot be in two
+places at once.
+  -extract(thing): Remove a given object ('thing') from the Container
+or any Container within it. Unlike remove(), this method requires a specific
+object. This method should return the extracted object, or `None` if 'thing'
+is not anywhere within the Container.
