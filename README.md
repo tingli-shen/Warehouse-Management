@@ -44,7 +44,7 @@ places at once.
     inside any of the Containers within it and automatically remove the added
 object from the Container it previously occupied, so it cannot be in two
 places at once.
-  -extract(thing): Remove a given object ('thing') from the Container
+  - extract(thing): Remove a given object ('thing') from the Container
 or any Container within it. Unlike remove(), this method requires a specific
 object. This method should return the extracted object, or `None` if 'thing'
 is not anywhere within the Container.
